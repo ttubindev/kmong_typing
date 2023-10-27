@@ -137,6 +137,7 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     padding: 72px 24px;
     height: 100vh;
 }
@@ -160,7 +161,7 @@ textarea {
 
 
 /* -------------------------------------------------- PREFERS COLOR SCHEME -------------------------------------------------- */
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
     html, body {
         color: #000000;
         background-color: #ffffff;
@@ -196,4 +197,4 @@ textarea {
     .dark {
         display: block;
     }
-}
+} */
