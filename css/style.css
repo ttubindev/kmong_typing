@@ -1,0 +1,199 @@
+@charset "UTF-8";
+@import url(font.css);
+/*
+    FILE NAME           : STYLE.CSS
+    PROJECT NAME        : FONT MOBILE PAGE
+    HTML/CSS AUTHOR     : TTUBIN(TTUBINY@GMAIL.COM)
+    WRITTEN DATE        : 2023/10/26~27
+    BROWSER             : CHROME
+*/
+/* -------------------------------------------------- RESET -------------------------------------------------- */
+*, ::before, ::after {
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    text-decoration: inherit;
+    font-style: inherit;
+    border: 0 solid transparent;
+    outline: 0 solid transparent;
+    vertical-align: baseline;
+    background: transparent none center center no-repeat;
+    background-size: 100%;
+    -webkit-background-size: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+html, body {
+    position: relative;
+    color: #000000;
+    font-size: 1rem;
+    font-family: "BaredaSonGeurssi10";
+    background-color: #ffffff;
+}
+
+ul, li, ol {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+nav, img, fieldset, video, iframe {
+    display: block;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+table, tr, td, th, thead, tbody, tfoot, caption {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+input, textarea, button {
+    display: block;
+    color: #000000;
+    font-size: 1rem;
+    font-family: "BaredaSonGeurssi10";
+}
+
+label, button, [type=button], [type=submit], [type=reset], a {
+    color: inherit;
+    cursor: pointer;
+}
+
+input[type=checkbox], input[type=radio] {
+    display: none;
+}
+
+input, select, option {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+
+
+/* -------------------------------------------------- FONT -------------------------------------------------- */
+@font-face {
+    font-family: "BaredaSonGeurssi10";
+    src: url("font/BaredaSonGeurssi10.ttf") format("truetype"),
+        url("font/BaredaSonGeurssi10.otf") format("opentype"),
+        url("font/BaredaSonGeurssi10.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+
+/* -------------------------------------------------- STYLE -------------------------------------------------- */
+/* COMMON */
+.wrap {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+/* HEADER */
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 72px;
+}
+
+#header h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#header h1 img {
+    width: 96px;
+}
+
+/* CONTAINER */
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 72px 24px;
+    height: 100vh;
+}
+
+#container .contents {
+    width: 100%;
+}
+
+#container .text-box {
+    vertical-align: middle;
+}
+
+#container .text-box textarea {
+    width: 100%;
+    max-height: 240px;
+    line-height: 1.75rem;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+
+
+/* -------------------------------------------------- PREFERS COLOR SCHEME -------------------------------------------------- */
+@media (prefers-color-scheme: light) {
+    html, body {
+        color: #000000;
+        background-color: #ffffff;
+    }
+
+    textarea {
+        color: #000000;
+    }
+
+    .light {
+        display: block;
+    }
+
+    .dark {
+        display: none;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    html, body {
+        color: #ffffff;
+        background-color: #000000;
+    }
+
+    textarea {
+        color: #ffffff;
+    }
+
+    .light {
+        display: none;
+    }
+
+    .dark {
+        display: block;
+    }
+}
